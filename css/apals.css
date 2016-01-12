@@ -1,0 +1,10 @@
+
+.divider {
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+img:hover {
+    opacity: .5;
+    cursor: pointer;
+}

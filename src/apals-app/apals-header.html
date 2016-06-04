@@ -1,0 +1,49 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="apals-header">
+    <template>
+        <style>
+            /* local styles go here */
+            :host {
+                text-align: center;
+                display: block;
+                background: #000;
+                height: 150px;
+            }
+
+            .title-text {
+                padding: 20px 0;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0.4em;
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                pointer-events: auto;
+            }
+
+        </style>
+
+
+        <header>
+            <div>
+                <a class="title-text">ANDREAS PÅLSSON</a>
+            </div>
+
+            <div class="icons">
+
+            </div>
+        </header>
+
+
+    </template>
+    <script>
+        Polymer({
+            /* this is the element's prototype */
+            is: 'apals-header'
+        });
+    </script>
+</dom-module>
+

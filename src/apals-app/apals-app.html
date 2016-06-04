@@ -1,0 +1,77 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../../bower_components/font-roboto/roboto.html">
+<link rel="import" href="/bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="apals-about.html">
+<link rel="import" href="apals-header.html">
+
+<dom-module id="apals-app">
+    <template>
+
+        <style shim-shadowdom is="custom-style">
+
+
+            :host {
+                --paper-tab-ink: #000;
+            }
+            paper-tabs {
+                --paper-tabs-selection-bar-color: #000;
+            }
+
+            body.core-narrow {
+                padding: 8px;
+            }
+
+            paper-tabs, core-toolbar {
+                background-color: #fff;
+                color: #000;
+            }
+
+            core-toolbar paper-tabs {
+                box-shadow: none;
+            }
+
+
+            paper-tabs.transparent-teal::shadow #selectionBar {
+                background-color: #00bcd4;
+            }
+
+            paper-tabs.transparent-teal paper-tab::shadow #ink {
+                color: #00bcd4;
+            }
+
+            .tab-container {
+                width: 300px;
+                margin: 0 auto;
+            }
+
+
+        </style>
+
+        <apals-header></apals-header>
+
+        <div class="tab-container">
+            <paper-tabs selected="{{selected}}">
+                <paper-tab>About</paper-tab>
+                <paper-tab>Projects</paper-tab>
+            </paper-tabs>
+        </div>
+
+        <iron-pages selected="{{selected}}">
+            <div>
+                <apals-about></apals-about>
+            </div>
+            <div>Page 2</div>
+        </iron-pages>
+
+    </template>
+
+    <script>
+
+        Polymer({
+            is: 'apals-app',
+        });
+
+    </script>
+
+</dom-module>

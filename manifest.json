@@ -1,0 +1,7 @@
+{
+  "name": "apals",
+  "short_name": "apals",
+  "description": "Personal website",
+  "start_url": "/",
+  "display": "standalone"
+}

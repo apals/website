@@ -1,10 +1,27 @@
+body {
+  display: flex;
+  display: -webkit-flex;
 
-.divider {
-    width:10px;
-    height:auto;
-    display:inline-block;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  background-image: url("../imgs/background.jpg");
 }
-img:hover {
-    opacity: .5;
-    cursor: pointer;
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#github:hover, #linkedin:hover {
+	opacity: 0.5;
+}
+
+.links {
+	text-align: center;
+}
+.links * {
+	display: inline;
+	margin: 0 auto;
 }
